@@ -1,6 +1,0 @@
-SELECT MAX(nb) FROM (
-    SELECT count(*) AS nb, P.NUMPRODUIT
-    FROM lignecommande LC, produit P, rubrique R
-    WHERE LC.NUMPRODUIT = P.NUMPRODUIT AND P.NUMRUBRIQUE = R.NUMRUBRIQUE AND R.NOMRUBRIQUE = 'Avion'
-    GROUP BY(NUMPRODUIT)
-    ) AS T
