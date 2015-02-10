@@ -172,7 +172,7 @@ include("include/haut.php");
 			<?php
 
 			$i = 1;
-			$retour = mysqli_query($bdd, 'SELECT * FROM `option` ORDER BY NUMOPTION');
+			$retour = mysqli_query($bdd, 'SELECT * FROM option ORDER BY NUMOPTION');
 			while ($donnees = mysqli_fetch_array($retour))
 			{
 				if ($i < 10) {

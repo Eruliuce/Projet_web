@@ -34,7 +34,8 @@ include("include/haut.php");
 		<li>
     <?php
 
-        $option = "SELECT I.NOMOPTION FROM composition C, option I WHERE C.NUMPRODUIT='".$row['NUMPRODUIT']."' AND C.NUMOPTION = I.NUMOPTION";
+        $option = "SELECT I.NOMOPTION FROM composition C, `option` I
+        WHERE C.NUMPRODUIT='".$row['NUMPRODUIT']."' AND C.NUMOPTION = I.NUMOPTION";
         $option_exec = mysqli_query($bdd, $option) or die(mysqli_error($bdd));
         while ($ligne = mysqli_fetch_assoc($option_exec)) {
   			echo $ligne['NOMOPTION'];
