@@ -1,0 +1,4 @@
+1 - Mettre tout les fichiers et dossiers à la racine du serveur (locale ou en ligne)
+2 - Lancer phpMyAdmin et créer une base de données nommée "avion"
+3 - Importer le fichier avion.sql dans la base de données crée
+4 - Profitez du site
